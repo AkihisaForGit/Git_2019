@@ -13,8 +13,8 @@ time
 #計算時間を見てみる
 
 # ハードウェア側の設定（計算に用いるCPUのスレッド数とメモリ設定）
-psi4.set_num_threads(nthread=2)
-psi4.set_memory("2GB")
+psi4.set_num_threads(nthread=3)
+psi4.set_memory("3GB")
 
 # 入力する分子（アセチルサリチル酸）
 smiles = 'CNC(=N[N+](=O)[O-])NCC1CCOC1'
