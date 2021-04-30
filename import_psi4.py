@@ -17,7 +17,7 @@ psi4.set_num_threads(nthread=2)
 psi4.set_memory("2GB")
 
 # 入力する分子（アセチルサリチル酸）
-smiles = 'CC(=O)Oc1ccccc1C(=O)O'
+smiles = 'CNC(=N[N+](=O)[O-])NCC1CCOC1'
 
 # ファイル名を決める
 t = datetime.datetime.fromtimestamp(time.time())
