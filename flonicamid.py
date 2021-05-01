@@ -17,19 +17,17 @@ psi4.set_num_threads(nthread=3)
 psi4.set_memory("3GB")
 
 # 入力する分子（flonicamid）
-molname = 'flonicamid'
+
 smiles = 'C1=CN=CC(=C1C(F)(F)F)C(=O)NCC#N'
 
 # ファイル名を決める
 t = datetime.datetime.fromtimestamp(time.time())
-psi4.set_output_file("{}{}{}_{}{}_{}.log".format(t.year,
+psi4.set_output_file("{}_{}{}{}_{}{}.log".format(smiles,
+                                              t.year,
                                               t.month,
                                               t.day,
                                               t.hour,
-                                              t.minute,
-                                                smiles,
-                                                molname))
-
+                                              t.minute))
 
 # SMILES から三次元構造を発生させて、粗3D構造最適化
 mol = Chem.MolFromSmiles(smiles)
