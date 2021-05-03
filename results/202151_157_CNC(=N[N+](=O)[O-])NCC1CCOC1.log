@@ -1,0 +1,149 @@
+gradient() will perform analytic gradient computation.
+
+*** tstart() called on aki-ubuntu-00
+*** at Sat May  1 01:57:54 2021
+
+   => Loading Basis Set <=
+
+    Name: 6-31G*
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1, 3, 9-12, 14 entry C          line   111 file /home/aki-/anaconda3/share/psi4/basis/6-31gs.gbs 
+    atoms 2, 4-5, 8      entry N          line   128 file /home/aki-/anaconda3/share/psi4/basis/6-31gs.gbs 
+    atoms 6-7, 13        entry O          line   145 file /home/aki-/anaconda3/share/psi4/basis/6-31gs.gbs 
+    atoms 15-28          entry H          line    44 file /home/aki-/anaconda3/share/psi4/basis/6-31gs.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RKS Reference
+                        3 Threads,   2861 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -2.621027421163    -1.900882909212     0.301060533732    12.000000000000
+         N           -1.878225831496    -0.788589466454    -0.276461357497    14.003074004430
+         C           -1.231105613290     0.117579956900     0.530791889416    12.000000000000
+         N           -1.262082498889     1.415045122232     0.506563710010    14.003074004430
+         N           -1.993079273201     2.036921082194    -0.435110225195    14.003074004430
+         O           -1.576438193951     3.130130973420    -0.841004866222    15.994914619570
+         O           -3.046686907032     1.532353519961    -0.860298742600    15.994914619570
+         N           -0.424027609751    -0.457706851654     1.482309444363    14.003074004430
+         C            0.606698838504    -1.438217558557     1.142558855585    12.000000000000
+         C            1.879451620115    -0.764272056888     0.641493165030    12.000000000000
+         C            1.799810736237    -0.169640269105    -0.750555356422    12.000000000000
+         C            3.261438339615    -0.084897903362    -1.137960028528    12.000000000000
+         O            3.930689759320    -1.166557003155    -0.473847409855    15.994914619570
+         C            3.023365349725    -1.750446657901     0.470200134826    12.000000000000
+         H           -3.421037651726    -1.528651051218     0.948856746687     1.007825032230
+         H           -3.077080783414    -2.486496492402    -0.502975152592     1.007825032230
+         H           -1.981145212152    -2.572469621307     0.879251291631     1.007825032230
+         H           -2.483004938149    -0.318268626784    -0.954388707515     1.007825032230
+         H           -0.044343030450     0.262634361325     2.093373695213     1.007825032230
+         H            0.834977398222    -1.998067319757     2.057082619235     1.007825032230
+         H            0.245027942157    -2.171538347278     0.413672264395     1.007825032230
+         H            2.191436666892     0.023311578345     1.341170017943     1.007825032230
+         H            1.307712784737     0.805452779435    -0.790413347378     1.007825032230
+         H            1.272864044761    -0.848455077376    -1.432006000488     1.007825032230
+         H            3.710982623657     0.850406224094    -0.787922121293     1.007825032230
+         H            3.414846436063    -0.163463522103    -2.217876349259     1.007825032230
+         H            2.686328677106    -2.708138405802     0.057793368662     1.007825032230
+         H            3.550961536193    -1.944352493233     1.408842012108     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.03633  B =      0.01293  C =      0.01062 [cm^-1]
+  Rotational constants: A =   1089.02028  B =    387.61782  C =    318.43088 [MHz]
+  Nuclear repulsion =  964.306043188400281
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 108
+  Nalpha       = 54
+  Nbeta        = 54
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 0.00e+00
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G*
+    Blend: 6-31G*
+    Number of shells: 112
+    Number of basis function: 238
+    Number of Cartesian functions: 238
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+  ==> DFT Potential <==
+
+   => Composite Functional: B3LYP <= 
+
+    B3LYP Hyb-GGA Exchange-Correlation Functional
+
+    P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch, J. Phys. Chem. 98, 11623 (1994)
+
+    Deriv               =              1
+    GGA                 =           TRUE
+    Meta                =          FALSE
+
+    Exchange Hybrid     =           TRUE
+    MP2 Hybrid          =          FALSE
+
+   => Exchange Functionals <=
+
+    0.0800   Slater exchange
+    0.7200         Becke 88
+
+   => Exact (HF) Exchange <=
+
+    0.2000               HF 
+
+   => Correlation Functionals <=
+
+    0.1900   Vosko, Wilk & Nusair (VWN5_RPA)
+    0.8100   Lee, Yang & Parr
+
+   => Molecular Quadrature <=
+
+    Radial Scheme          =       TREUTLER
+    Pruning Scheme         =           FLAT
+    Nuclear Scheme         =       TREUTLER
+
+    BS radius alpha        =              1
+    Pruning alpha          =              1
+    Radial Points          =             75
+    Spherical Points       =            302
+    Total Points           =         620664
+    Total Blocks           =           4572
+    Max Points             =            256
+    Max Functions          =            209
+
+   => Loading Basis Set <=
+
+    Name: (6-31G* AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1, 3, 9-12, 14 entry C          line   121 file /home/aki-/anaconda3/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2, 4-5, 8      entry N          line   171 file /home/aki-/anaconda3/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 6-7, 13        entry O          line   221 file /home/aki-/anaconda3/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 15-28          entry H          line    51 file /home/aki-/anaconda3/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
