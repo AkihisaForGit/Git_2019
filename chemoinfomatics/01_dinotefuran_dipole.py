@@ -16,6 +16,21 @@ time
 psi4.set_num_threads(nthread=3)
 psi4.set_memory("3GB")
 
+
+## SMILESをxyz形式に変換
+def smi2xyz(smiles):
+    mol = Chem.AddHs(Chem.MolFromSmiles(smiles))
+    AllChem.EmbedMolecule(mol, AllChem.ETKDGv2())
+    AllChem.UFFOptimizeMolecule(mol)
+    conf = mol.GetConformer(-1)
+    
+    xyz = '0 1'
+    for atom, (x,y,z) in zip(mol.GetAtoms(), conf.GetPositions()):
+        xyz += '\n'
+        xyz += '{}\t{}\t{}\t{}'.format(atom.GetSymbol(), x, y, z)
+        
+    return xyz
+    
 # 入力する分子（dinotefuran）
 
 smiles = 'CNC(=N[N+](=O)[O-])NCC1CCOC1'
